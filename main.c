@@ -11,9 +11,10 @@ typedef struct{
     double thd_percent;
 };
 int main(){
-    FILE *fp=fopen("","r");
-    if(*fp==NULL){
+    FILE *fp=fopen("test.txt","w");
+    if(fp==NULL){
         printf("error: file not found");
         return 1;
     }
+    printf("it's gonna be ok");
 }
