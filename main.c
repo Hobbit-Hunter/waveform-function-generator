@@ -16,5 +16,4 @@ int main(){
         printf("error: file not found");
         return 1;
     }
-    printf("it's gonna be ok");
 }
