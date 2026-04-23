@@ -9,11 +9,27 @@ typedef struct{
     double frequency;
     double power_factor;
     double thd_percent;
-};
+}waveform;
 int main(){
     FILE *fp=fopen("test.txt","w");
     if(fp==NULL){
         printf("error: file not found");
         return 1;
+    }
+    char line[257];
+    int row;
+    struct waveform w;
+
+    while(fgets(line,sizeof(line),fp)!=NULL){
+        row++;
+        sscanf(line,"%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf",
+               &w.timestamp,
+               &w.phase_A_voltage,
+               &w.phase_B_voltage,
+               &w.phase_C_voltage,
+               &w.line_currency,
+               &w.frequency,
+               &w.power_factor,
+               &w.thd_percent);
     }
 }
