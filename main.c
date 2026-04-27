@@ -16,6 +16,7 @@ int main(){
         printf("error: file not found");
         return 1;
     }
+    //file has been opened
     char line[257];
     int row;
     struct waveform w;
@@ -32,4 +33,5 @@ int main(){
                &w.power_factor,
                &w.thd_percent);
     }
+    //while loop has gone through each line of csv file
 }
