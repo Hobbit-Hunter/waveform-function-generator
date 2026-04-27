@@ -28,9 +28,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58674b3c-30d7-47e9-a352-6a4249b8b378" name="Changes" comment="comments">
-      <change afterPath="$PROJECT_DIR$/waveform.h" afterDir="false" />
+    <list default="true" id="58674b3c-30d7-47e9-a352-6a4249b8b378" name="Changes" comment="header file">
+      <change afterPath="$PROJECT_DIR$/waveform.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +156,7 @@
       <workItem from="1776934416427" duration="9893000" />
       <workItem from="1777143087711" duration="4887000" />
       <workItem from="1777210486755" duration="3952000" />
-      <workItem from="1777279516554" duration="5156000" />
+      <workItem from="1777279516554" duration="9745000" />
     </task>
     <task id="LOCAL-00001" summary="header and source">
       <option name="closed" value="true" />
@@ -172,7 +174,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777282484051</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="header file">
+      <option name="closed" value="true" />
+      <created>1777292612859</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777292612859</updated>
+    </task>
+    <task id="LOCAL-00004" summary="header file">
+      <option name="closed" value="true" />
+      <created>1777292639196</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777292639196</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +215,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="header and source" />
     <MESSAGE value="comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments" />
+    <MESSAGE value="header file" />
+    <option name="LAST_COMMIT_MESSAGE" value="header file" />
   </component>
 </project>

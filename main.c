@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "waveform.h"
 
 typedef struct{
     double timestamp;
@@ -19,7 +20,7 @@ int main(){
     //file has been opened
     char line[257];
     int row;
-    struct waveform w;
+    waveform w;
 
     while(fgets(line,sizeof(line),fp)!=NULL){
         row++;
@@ -34,4 +35,6 @@ int main(){
                &w.thd_percent);
     }
     //while loop has gone through each line of csv file
+    rms(w.phase_A_voltage);
+    printf("root mean squared : %lf", rms);
 }
