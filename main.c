@@ -12,7 +12,7 @@ typedef struct{
     double thd_percent;
 }waveform;
 int main(){
-    FILE *fp=fopen("test.txt","w");
+    FILE *fp=fopen("../power_quality_log.csv","r");
     if(fp==NULL){
         printf("error: file not found");
         return 1;
