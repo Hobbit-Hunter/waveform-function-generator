@@ -28,10 +28,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58674b3c-30d7-47e9-a352-6a4249b8b378" name="Changes" comment="brought in the csv file and changed fopen to read(r)">
+    <list default="true" id="58674b3c-30d7-47e9-a352-6a4249b8b378" name="Changes" comment="changed struct location">
+      <change afterPath="$PROJECT_DIR$/io.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/io.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waveform.h" beforeDir="false" afterPath="$PROJECT_DIR$/waveform.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +160,7 @@
       <workItem from="1777210486755" duration="3952000" />
       <workItem from="1777279516554" duration="11478000" />
       <workItem from="1777406409934" duration="318000" />
-      <workItem from="1777465814154" duration="876000" />
+      <workItem from="1777465814154" duration="4479000" />
     </task>
     <task id="LOCAL-00001" summary="header and source">
       <option name="closed" value="true" />
@@ -209,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777466078964</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changed struct location">
+      <option name="closed" value="true" />
+      <created>1777466874892</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1777466874892</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +246,7 @@
     <MESSAGE value="header file" />
     <MESSAGE value="root mean squared + peak to peak + DC_offset" />
     <MESSAGE value="brought in the csv file and changed fopen to read(r)" />
-    <option name="LAST_COMMIT_MESSAGE" value="brought in the csv file and changed fopen to read(r)" />
+    <MESSAGE value="changed struct location" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed struct location" />
   </component>
 </project>
