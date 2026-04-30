@@ -3,27 +3,33 @@
 #include <stdio.h>
 #include "io.h"
 #include "waveform.h"
-FILE *fp=fopen("../power_quality_log.csv","r");
-    if(fp==NULL){
+int read_file(char filename[], waveform* w) {
+    FILE *fp = fopen(filename, "r");
+    if (fp == NULL) {
         printf("error: file not found");
         return 1;
     }
 //file has been opened
-char line[257];
-int row;
-waveform w;
+    char line[257];
+    int row=-1;
 
-while(fgets(line,sizeof(line),fp)!=NULL){
-    row++;
-    sscanf(line,"%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf",
-           &w.timestamp,
-           &w.phase_A_voltage,
-           &w.phase_B_voltage,
-           &w.phase_C_voltage,
-           &w.line_currency,
-           &w.frequency,
-           &w.power_factor,
-           &w.thd_percent);
+    while (fgets(line, sizeof(line), fp) != NULL) {
+        if(row>=0){
+
+
+            sscanf(line, "%lf,%lf,%lf,%lf,%lf,%lf,%lf,%lf",
+                   &(w->timestamp[row]),
+                   &(w->phase_A_voltage[row]),
+                   &(w->phase_B_voltage[row]),
+                   &(w->phase_C_voltage[row]),
+                   &(w->line_currency[row]),
+                   &(w->frequency[row]),
+                   &(w->power_factor[row]),
+                   &(w->thd_percent[row])); // Dereference the content of the struct,
+                   // find the target location for that particular row item, then find the address to send the data to
+        }
+        row++;
+    }
+    fclose(fp);
+    return 0;
 }
-fclose(fp);
-return row;
